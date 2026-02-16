@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grupo_op"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/inicio_v"
+            android:title="@string/inicio_v"
+            android:icon="@drawable/ico_inicio"/>
+        <item
+            android:id="@+id/mi_tienda_v"
+            android:title="@string/mi_tienda_v"
+            android:icon="@drawable/ico_mi_tienda"/>
+        <item
+            android:id="@+id/resenia_v"
+            android:title="@string/resenia_v"
+            android:icon="@drawable/star"/>
+    </group>
+
+    <item
+        android:id="@+id/cerrar_sesion_v"
+        android:title="@string/cerrar_sesion_v"
+        android:icon="@drawable/exit"/>
+
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/ico_stfondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".STActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--Agregar Boton Ir Agricultor-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tipoVendedor"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_margin="16dp"
+            android:text="@string/tipoVendedor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@color/verde_claro"/>
+        <!--Agregar Boton Ir Cliente-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tipoCliente"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tipoCliente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            android:textAllCaps="true" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

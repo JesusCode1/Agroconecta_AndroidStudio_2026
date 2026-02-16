@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+       android:id="@+id/mis_productos_v"
+       android:title="@string/mis_productos_v"
+       android:icon="@drawable/ico_apps"/>
+    <item
+        android:id="@+id/agregar_prod_v"
+        android:title=""
+        android:enabled="false"/>
+    <item
+        android:id="@+id/mis_ordenes_v"
+        android:title="@string/mis_ordenes_v"
+        android:icon="@drawable/ico_ordenes"/>
+
+
+</menu>

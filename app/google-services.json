@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "181441779647",
+    "firebase_url": "https://agroconecta-5610f-default-rtdb.firebaseio.com",
+    "project_id": "agroconecta-5610f",
+    "storage_bucket": "agroconecta-5610f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181441779647:android:e2fda9ae87d3e2ed62b30a",
+        "android_client_info": {
+          "package_name": "com.cibertec.agroconecta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6-cs0jN51zlZ97vr0HjIuW8yzo4Oi6Gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181441779647:android:4908cdf55735b65062b30a",
+        "android_client_info": {
+          "package_name": "com.cibertec.ecomerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6-cs0jN51zlZ97vr0HjIuW8yzo4Oi6Gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

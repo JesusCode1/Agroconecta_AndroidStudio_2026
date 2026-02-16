@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vendedor.Productos.AgregarProductoActivity">
+    
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="@string/txtAgregarProducto"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ccc"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RLimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRL">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAgregarPro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+   <!--Informacion Producto-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/RLimg"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <!--Lista de imagenes-->
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rv_imagenespro"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+               tools:listitem="@layout/img_seleccionadas"
+               app:spanCount="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.google.android.material.textfield.TextInputLayout>
+             
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+         </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

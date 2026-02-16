@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Tienda Agroconecta</string>
+
+    <string name="opend">Open drawer</string>
+    <string name="closed">Close drawer</string>
+
+
+    <!--STactivity Ir vendedor o cliente-->
+    <string name="tipoVendedor">COMO AGRICULTOR</string>
+    <string name="tipoCliente">COMO CLIENTE</string>
+
+    <!--Navigate Vendedor-->
+    <string name="inicio_v">Inicio</string>
+    <string name="mi_tienda_v">Mi Tienda</string>
+    <string name="resenia_v">Reseñas</string>
+    <string name="cerrar_sesion_v">Cerrar sesion</string>
+
+
+    <!---->
+    <string name="mis_productos_v">Mis productos</string>
+    <string name="mis_ordenes_v">Ordenes</string>
+
+    <string name="txt_bienvenido">Bienvenido(a)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--Registro Ven-->
+    <string name="txtRegistrov">Registro de vendedor</string>
+    <string name="txtNombresv">Nombres completos</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPassword">Password</string>
+    <string name="etcPassword">Confirmar password</string>
+    <string name="btnRegistrarv">Registrarme</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Lovin Ven-->
+    <string name="txtLoginV">Login de vendedor</string>
+    <string name="btnLoginV">Ingresar</string>
+    <string name="txtNocuentaV">¿No tienes una Cuenta?</string>
+    <string name="tuRegistrameV">Registrarme</string>
+
+
+    <!--Navigat Cliente-->
+    <string name="inicio_c">Inicio</string>
+    <string name="mi_perfil_c">Mi Perfil</string>
+    <string name="cerrar_sesion_c">Cerrar sesion</string>
+
+    <!--B Navigat bar Cliente-->
+    <string name="tienda_c">Tienda</string>
+    <string name="mis_ordenes_c">Mis Ordenes</string>
+
+    <!--Registro Cliente-->
+
+    <string name="txtRegistroc">Registro de Cliente</string>
+    <string name="txtNombresc">Nombres Completos</string>
+    <string name="btnRegistrarc">Registrarme</string>
+
+    <!--Login Cliente-->
+    <string name="txtLoginC">Login de cliente</string>
+    <string name="btnLoginC">Ingresar</string>
+    <string name="tuRegistrameC">Registrarme</string>
+
+
+    <!--Productos-->
+    <string name="txtAgregarProducto">Agregar Producto></string>
+    <string name="txtNombrepro">Nombre del producto></string>
+    <string name="txtDescripcionpro">Descripcion</string>
+    <string name="txtCategoriapro">Categoria</string>
+    <string name="txtPrecioPro">Precio</string>
+    <string name="btnAgregarProducto">Agregar producto</string>
+
+
+
+</resources>
