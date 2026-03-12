@@ -5,6 +5,10 @@
         android:id="@+id/tienda_c"
         android:title="@string/tienda_c"
         android:icon="@drawable/ico_tienda"/>
+    <item
+        android:id="@+id/op_carrito_c"
+        android:title="Carrito"
+        android:icon="@drawable/ico_carrito"/>
 
     <item
         android:id="@+id/mis_ordenes_c"

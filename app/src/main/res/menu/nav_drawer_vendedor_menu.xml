@@ -12,6 +12,10 @@
             android:title="@string/inicio_v"
             android:icon="@drawable/ico_inicio"/>
         <item
+            android:id="@+id/categorias_v"
+            android:title="@string/categorias_v"
+            android:icon="@drawable/ico_categoria"/>
+        <item
             android:id="@+id/mi_tienda_v"
             android:title="@string/mi_tienda_v"
             android:icon="@drawable/ico_mi_tienda"/>

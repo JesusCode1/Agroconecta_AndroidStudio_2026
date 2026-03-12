@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Vendedor.B_N_F_Framents_Vendedor.FragmentMisProductosv">
 
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Mi Productos"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
-
+        tools:listitem="@layout/item_producto"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
 </FrameLayout>

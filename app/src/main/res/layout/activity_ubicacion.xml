@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps.UbicacionActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarrvu"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@+id/Imgbregresar"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ico_regresar"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/txtSelUbicacion"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/Imgbgps"
+            android:src="@drawable/ico_gps"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </RelativeLayout>
+    <!--Muestra el Mapa-->
+    <fragment
+        android:id="@+id/Mapf"
+        android:layout_below="@+id/toolbarrvu"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <!--Buscar ubicacion-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarrvu"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"/>
+
+    </com.google.android.material.card.MaterialCardView>
+   <LinearLayout
+       android:id="@+id/listUbi"
+       android:orientation="vertical"
+       android:layout_margin="10dp"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <!--Mostrar ubicacion usuario-->
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardUseCompatPadding="true"
+           app:cardCornerRadius="8dp"
+           app:contentPadding="10dp">
+           <TextView
+               android:id="@+id/lstv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </com.google.android.material.card.MaterialCardView>
+
+       <!--confirmar ubi-->
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/btnUbiConfirmar"
+           android:text="@string/btnUbiConfirmar"
+           android:textAllCaps="true"
+           app:cornerRadius="8dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+</RelativeLayout>

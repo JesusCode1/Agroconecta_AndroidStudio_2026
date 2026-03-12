@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgcar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <!--Nombre Producto-->
+        <TextView
+            android:id="@+id/txtNombrePcarr"
+            android:text="Nombre del Producto"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgcar"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--Descripcion-->
+        <TextView
+            android:id="@+id/txtDescPcarr"
+            android:text="Descripción"
+            android:layout_below="@+id/txtNombrePcarr"
+            android:layout_centerHorizontal="true"
+            tools:text="@tools:sample/lorem[7]"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--dir-->
+        <TextView
+            android:id="@+id/txtdirPcarr"
+            android:text="dir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtDescPcarr"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--precio-->
+        <TextView
+            android:id="@+id/txtPrecioPCarr"
+            android:text="00"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--stok-->
+        <TextView
+            android:id="@+id/txtstockPcarr"
+            android:text="00"
+            android:layout_toEndOf="@+id/txtPrecioPCarr"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--Costo Total-->
+        <TextView
+            android:id="@+id/txtPrecioTotalcarr"
+            android:text="Total: S/ 0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/txtPrecioPCarr"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnMenos"
+            android:src="@drawable/ico_menos"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtcantidadCarr"
+            android:text="1"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btnMas"
+            android:src="@drawable/ico_mas"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgregarCarr"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="0dp"
+        android:padding="5dp"
+        android:text="Agregar Carrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

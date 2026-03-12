@@ -26,7 +26,7 @@ class SSActivity : AppCompatActivity() {
          verBienvenida()
     }
     private fun verBienvenida(){
-        object : CountDownTimer( 10000, 1000){
+        object : CountDownTimer( 1000, 1000){
             override fun onFinish() {
                 comprobarTipoUsuario()
             }

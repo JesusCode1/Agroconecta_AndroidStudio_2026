@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Cliente.Productos.ProductosCatcActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltituloCatc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtProCatTitulo"
+            android:text="Producto Categoria"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="5">
+
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="5dp"
+           app:cardUseCompatPadding="true"
+           app:contentPadding="10dp"
+           android:layout_weight="4">
+           
+           <EditText
+               android:id="@+id/txtBuscarProducto"
+               android:hint="@string/txtBuscarProducto"
+               android:drawablePadding="10dp"
+               android:drawableEnd="@drawable/ico_buscar"
+               android:padding="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+
+       </com.google.android.material.card.MaterialCardView>
+
+      <ImageButton
+          android:id="@+id/btnlimpiartextprodcli"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:padding="10dp"
+          android:src="@drawable/ico_limpiar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productorvcatc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/productoc"
+        app:spanCount="2"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

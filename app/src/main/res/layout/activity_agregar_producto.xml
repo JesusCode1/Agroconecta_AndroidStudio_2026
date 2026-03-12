@@ -14,6 +14,7 @@
         android:layout_height="55dp">
 
         <TextView
+            android:id="@+id/txtAgregarProducto"
             android:text="@string/txtAgregarProducto"
             android:layout_centerInParent="true"
             android:textStyle="bold"
@@ -34,6 +35,7 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgAgregarPro"
+            android:src="@drawable/ico_foto"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="15dp"
@@ -57,45 +59,116 @@
                app:spanCount="4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
+             <!--N Producto-->
              <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/tilNombrePro"
+                 android:layout_below="@+id/rv_imagenespro"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content">
                  <EditText
+                     android:id="@+id/txtNombrepro"
+                     android:hint="@string/txtNombrepro"
+                     android:inputType="textCapSentences"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+             </com.google.android.material.textfield.TextInputLayout>
+             <!--Desc-->
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/tilDescripcionpro"
+                 android:layout_below="@+id/tilNombrePro"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <EditText
+                     android:id="@+id/txtDescripcionpro"
+                     android:hint="@string/txtDescripcionpro"
+                     android:inputType="textCapSentences"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
              </com.google.android.material.textfield.TextInputLayout>
 
+
+             <!--Desplegable Categoria-->
+             <TextView
+                 android:id="@+id/txtCategoriapro"
+                 android:hint="@string/txtCategoriapro"
+                 android:layout_marginTop="5dp"
+                 app:drawableEndCompat="@drawable/ico_abajo"
+                 android:padding="15dp"
+                 android:textSize="18sp"
+                 android:gravity="center_vertical"
+                 android:background="@drawable/ceditex"
+                 android:layout_below="@+id/tilDescripcionpro"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+
+
+             <!--Precio por kilo-->
              <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/tilPrecio"
+                 android:layout_below="@+id/txtCategoriapro"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content">
                  <EditText
+                     android:id="@+id/txtPrecioPro"
+                     android:hint="@string/txtPrecioPro"
+                     android:inputType="numberDecimal"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
              </com.google.android.material.textfield.TextInputLayout>
-
+             <!--Stock-->
              <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/tilStock"
+                 android:layout_below="@+id/tilPrecio"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content">
                  <EditText
+                     android:id="@+id/txtStock"
+                     android:hint="@string/txtStock"
+                     android:inputType="number"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
              </com.google.android.material.textfield.TextInputLayout>
-             
+             <!--Ubicacion gps-->
              <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/InputLay"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content">
-                 <EditText
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"/>
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/tilStock"
+                 app:boxCornerRadiusBottomStart="8dp"
+                 app:boxCornerRadiusBottomEnd="8dp"
+                 app:boxCornerRadiusTopEnd="8dp"
+                 app:boxCornerRadiusTopStart="8dp">
+
+                 <AutoCompleteTextView
+                 android:id="@+id/txtUbicacionPro"
+                 android:hint="@string/txtUbicacionc"
+                 android:inputType="none"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
 
              </com.google.android.material.textfield.TextInputLayout>
+             <!-- botonAgregar -->
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btnAgregarProducto"
+                 android:text="@string/btnAgregarProducto"
+                 android:layout_below="@+id/InputLay"
+                 android:layout_alignParentBottom="true"
+                 android:textAllCaps="true"
+                 android:layout_margin="10dp"
+                 app:cornerRadius="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
 
          </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+
 
 </RelativeLayout>

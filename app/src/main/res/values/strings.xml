@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Tienda Agroconecta</string>
+    <string name="app_name">Agroconecta</string>
+
+
+    <!--Key de google Maps Platform SDK-->
+    <string name="keymaps">AIzaSyC_A779BhgwNWRKJSX46V6GuQTiBIRndtA</string>
+    <!--Firebase SDK web ID del apartado de google authentication-->
+    <string name="default_web_client_id">181441779647-d0knunbqf0om9bgeiertjqthiin7df6v.apps.googleusercontent.com</string>
 
     <string name="opend">Open drawer</string>
     <string name="closed">Close drawer</string>
@@ -12,6 +18,7 @@
     <!--Navigate Vendedor-->
     <string name="inicio_v">Inicio</string>
     <string name="mi_tienda_v">Mi Tienda</string>
+    <string name="categorias_v">Categorias</string>
     <string name="resenia_v">Reseñas</string>
     <string name="cerrar_sesion_v">Cerrar sesion</string>
 
@@ -59,15 +66,69 @@
     <string name="btnLoginC">Ingresar</string>
     <string name="tuRegistrameC">Registrarme</string>
 
+    <!--Perfil Cliente-->
+    <string name="txtMiPerfil">Mi Perfil</string>
+    <string name="txtNombrePerfilc">Nombres Completos</string>
+    <string name="txtEmailPerfilc">Email</string>
+    <string name="txtDniPc">Dni</string>
+    <string name="txtTelfPc">Telefono</string>
+    <string name="fechaPerfilPc">Fecha de registro</string>
+    <string name="btnGuardarPc">Guardar</string>
+    <string name="proveerdoPc">Proveedor</string>
+    <string name="txtUbicacionc">Ubicacion</string>
+
+    <!--categoria Cliente-->
+    <string name="lblnombrecatc">Nombre de Categoria</string>
+    <string name="verproductoc">Ver Productos</string>
+
+    <!--Producto Cliente-->
+    <string name="agregarcarrito">Agregar al carrito</string>
+    <string name="txtBuscarProducto">Buscar Producto</string>
+
 
     <!--Productos-->
-    <string name="txtAgregarProducto">Agregar Producto></string>
-    <string name="txtNombrepro">Nombre del producto></string>
+    <string name="txtAgregarProducto">Agregar Producto</string>
+    <string name="txtNombrepro">Nombre del producto</string>
     <string name="txtDescripcionpro">Descripcion</string>
     <string name="txtCategoriapro">Categoria</string>
-    <string name="txtPrecioPro">Precio</string>
+    <string name="txtPrecioPro">Precio por kilo</string>
+    <string name="txtStock">Stock</string>
+    <string name="txtUbicacion">Ubicacion</string>
     <string name="btnAgregarProducto">Agregar producto</string>
 
+    <!--Add Catg-->
+    <string name="tCategoria">Ingrese Categoria</string>
+    <string name="btnAgregarCat">Agregar categoria</string>
+
+    <!--Item Catg-->
+    <string name="item_nombre_categoriav">Nombre de categoria</string>
 
 
+    <string name="item_nombrepro">Nombre del Producto</string>
+    <string name="item_preciopro">00</string>
+    <string name="item_stock">00</string>
+
+
+    <!--Map-->
+    <string name="txtSelUbicacion">Seleccione Ubicacion</string>
+    <string name="btnUbiConfirmar">Confirmar</string>
+
+    <!--Registro Telf-->
+    <string name="txtLoginTelC">Login Telefono</string>
+    <string name="etTelefonoC">Telefono</string>
+    <string name="btnEnviarCodigo">Enviar Codigo</string>
+    <string name="etCodver">Codigo</string>
+    <string name="btnVerificarCod">Verificar Codigo</string>
+    <string name="tvReenviarCod"><b>Reenviar Codigo</b></string>
+
+
+    <!--Detalle Producto-->
+
+    <string name="detnombre">Nombre de Producto</string>
+    <string name="detdescrip">Descripcion</string>
+    <string name="detprecio">Precio</string>
+    <string name="detstok">stock</string>
+    <string name="detubicacion">direccion</string>
+
+    <string name="imgdetV">1</string>
 </resources>

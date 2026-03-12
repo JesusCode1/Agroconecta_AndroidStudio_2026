@@ -7,9 +7,6 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.cibertec.agroconecta.Constantes
-import com.cibertec.agroconecta.R
-import com.cibertec.agroconecta.Vendedor.MainActivityVendedor
-import com.cibertec.agroconecta.databinding.ActivityLoginClienteBinding
 import com.cibertec.agroconecta.databinding.ActivityRegistroClienteBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -102,6 +99,9 @@ class RegistroClienteActivity : AppCompatActivity() {
             datosCliente["uid"] = "$uid"
             datosCliente["nombres"] = "$nombrec"
             datosCliente["email"] = "$emailc"
+            datosCliente["telefono"] = ""
+            datosCliente["dni"] = ""
+            datosCliente["proveedor"] = "email"
             datosCliente["tRegistro"] = "$tiempoRegistro"
             datosCliente["imagen"] = ""
             datosCliente["tipoUsuario"] ="cliente"

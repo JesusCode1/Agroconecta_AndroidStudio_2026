@@ -2,17 +2,52 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/tienda_icono"
+        android:icon="@mipmap/planta_icono_round"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/planta_icono_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ecomerce">
+        <activity
+            android:name=".Vendedor.Orden.DetalleOrdenvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente.Orden.DetalleOrdencActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente.Productos.ProductosCatcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente.TelfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Maps.UbicacionActivity"
+            android:exported="false" />
         <activity
             android:name=".Vendedor.Productos.AgregarProductoActivity"
             android:exported="false" />
@@ -46,6 +81,10 @@
         <activity
             android:name=".Vendedor.MainActivityVendedor"
             android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/keymaps" />
     </application>
 
 </manifest>

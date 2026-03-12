@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/tInfoCliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Información del Cliente"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibCerrar"
+                app:layout_constraintEnd_toStartOf="@+id/ibCerrar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibCerrar" />
+
+            <ImageButton
+                android:id="@+id/ibCerrar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#757575"
+                tools:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@+id/ibCerrar" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivPerfil"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ico_fotoperfil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+                tools:src="@tools:sample/avatars" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <TextView
+                android:id="@+id/txtNombresC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nombres:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivPerfil" />
+
+            <TextView
+                android:id="@+id/tNombresC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Juan Pérez García"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/txtNombresC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toTopOf="@+id/txtNombresC" />
+
+            <TextView
+                android:id="@+id/txtDniC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="DNI:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombresC" />
+
+            <TextView
+                android:id="@+id/tDniC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="12345678-A"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/txtDniC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toTopOf="@+id/txtDniC" />
+
+            <TextView
+                android:id="@+id/txtTelC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Teléfono:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDniC" />
+
+            <TextView
+                android:id="@+id/tTelC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="+34 600 123 456"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/txtTelC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toTopOf="@+id/txtTelC" />
+
+            <TextView
+                android:id="@+id/txtDir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Dirección:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelC" />
+
+            <TextView
+                android:id="@+id/tDirC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Calle Falsa 123, 2ºB\nMadrid, España"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintTop_toTopOf="@+id/txtDir" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tDirC">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLLamar"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LLAMAR"
+                    android:textAllCaps="true"
+                    app:cornerRadius="24dp"
+                    app:icon="@android:drawable/ic_menu_call" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSms"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="SMS"
+                    android:textAllCaps="true"
+                    app:cornerRadius="24dp"
+                    app:icon="@android:drawable/ic_menu_send" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

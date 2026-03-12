@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/listimgProshap"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/img_item"
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/listnombreCarr"
+                android:text="Nombre del Producto"
+                android:layout_toEndOf="@+id/listimgProshap"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--Precio-->
+            <TextView
+                android:id="@+id/listPrecioCarr"
+                android:layout_below="@+id/listnombreCarr"
+                android:layout_toEndOf="@+id/listimgProshap"
+                android:layout_marginStart="10dp"
+                android:text="00"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--PrecioTotal-->
+            <TextView
+                android:id="@+id/listpreTotalCarr"
+                android:layout_below="@+id/listPrecioCarr"
+                android:layout_toEndOf="@+id/listimgProshap"
+                android:layout_marginStart="10dp"
+                android:text="00"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageButton
+                android:id="@+id/btnMenos"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ico_menos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/listcantidadcarr"
+                android:text="1"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/btnMas"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ico_mas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/btnlistEliminar"
+                android:src="@drawable/ico_eliminar"
+                android:background="@null"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        
+        
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

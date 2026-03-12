@@ -13,7 +13,20 @@
           "package_name": "com.cibertec.agroconecta"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "181441779647-01ijhpvn5lp3d2nolj7kqanjfllpoea5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cibertec.agroconecta",
+            "certificate_hash": "d5a843f435191d93436a4f4a62e70841b52b3481"
+          }
+        },
+        {
+          "client_id": "181441779647-d0knunbqf0om9bgeiertjqthiin7df6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD6-cs0jN51zlZ97vr0HjIuW8yzo4Oi6Gw"
@@ -21,26 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:181441779647:android:4908cdf55735b65062b30a",
-        "android_client_info": {
-          "package_name": "com.cibertec.ecomerce"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD6-cs0jN51zlZ97vr0HjIuW8yzo4Oi6Gw"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181441779647-1pvcm2ll68dh7ad1okad6eub77a6snpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
