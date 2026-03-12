@@ -5,4 +5,10 @@
     <color name="celeste_claro">#85c1e9</color>
     <color name="celeste_oscuro">#5DADE2</color>
     <color name="verde_claro">#66BB6A</color>
+
+    <color name="azul_marino_oscuro">#1B3A57</color>
+    <color name="morado">#8E44AD</color>
+    <color name="naranja">#E67E22</color>
+    <color name="verde_oscuro2">#1E8449</color>
+    <color name="rojo">#C0392B</color>
 </resources>

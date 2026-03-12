@@ -51,6 +51,15 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.lottie)  /*Este  lib es para animaciones*/
+    implementation(libs.imagePicker)/*recorta img*/
+    implementation(libs.glide)/*leer img*/
+    implementation(libs.storage)/*subir archivosmultimedia*/
+    implementation(libs.maps)
+    implementation(libs.places)
+    implementation(libs.circleImage)
+    implementation(libs.authGoogle)
+    implementation(libs.ctp) /*codigo de telefono por pais*/
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

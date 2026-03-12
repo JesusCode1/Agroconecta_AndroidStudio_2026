@@ -6,11 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.cibertec.agroconecta.R
 import com.cibertec.agroconecta.Vendedor.B_N_F_Framents_Vendedor.FragmentMisProductosv
 import com.cibertec.agroconecta.Vendedor.B_N_F_Framents_Vendedor.FragmentOrdenesv
+import com.cibertec.agroconecta.Vendedor.Productos.AgregarProductoActivity
 import com.cibertec.agroconecta.databinding.FragmentIniciovBinding
+import android.content.Intent
 
 
 class Fragment_iniciov : Fragment() {
@@ -42,11 +43,9 @@ class Fragment_iniciov : Fragment() {
         binding.btnNavigation.selectedItemId = R.id.mis_productos_v
 
         binding.FloatB.setOnClickListener {
-            Toast.makeText(
-                mContext,
-                "Has presionado el boton flotante" ,
-                Toast.LENGTH_SHORT
-            ).show()
+            val  intent = Intent(mContext, AgregarProductoActivity::class.java)
+            intent.putExtra("Edicion",false)
+            mContext.startActivity(intent)
         }
 
        return  binding.root

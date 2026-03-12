@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.cibertec.agroconecta.Cliente.LoginClienteActivity
 import com.cibertec.agroconecta.Vendedor.LoginVendedorActivity
 import com.cibertec.agroconecta.databinding.ActivityStactivityBinding
-import com.cibertec.agroconecta.databinding.FragmentIniciocBinding
 
 
 class STActivity : AppCompatActivity() {

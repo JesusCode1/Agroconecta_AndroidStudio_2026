@@ -13,6 +13,7 @@ import com.cibertec.agroconecta.R
 import com.cibertec.agroconecta.STActivity
 import com.cibertec.agroconecta.Vendedor.B_N_F_Framents_Vendedor.FragmentMisProductosv
 import com.cibertec.agroconecta.Vendedor.B_N_F_Framents_Vendedor.FragmentOrdenesv
+import com.cibertec.agroconecta.Vendedor.N_F_vendedor.FragmentCategoriasv
 import com.cibertec.agroconecta.Vendedor.N_F_vendedor.FragmentResenv
 import com.cibertec.agroconecta.Vendedor.N_F_vendedor.Fragment_iniciov
 import com.cibertec.agroconecta.Vendedor.N_F_vendedor.Fragmentmitiendav
@@ -80,6 +81,9 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
               }
               R.id.mi_tienda_v->{
                   replaceFragment(Fragmentmitiendav())
+              }
+              R.id.categorias_v->{
+                  replaceFragment(FragmentCategoriasv())
               }
               R.id.resenia_v->{
                   replaceFragment(FragmentResenv())

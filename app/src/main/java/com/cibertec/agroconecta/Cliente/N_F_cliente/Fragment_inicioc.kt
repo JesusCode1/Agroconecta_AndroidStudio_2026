@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.cibertec.agroconecta.Cliente.B_N_F_Cliente.FragmentCarrito
 import com.cibertec.agroconecta.Cliente.B_N_F_Cliente.FragmentOrdenesc
 import com.cibertec.agroconecta.Cliente.B_N_F_Cliente.FragmentTiendac
 import com.cibertec.agroconecta.R
@@ -25,6 +26,9 @@ class Fragment_inicioc : Fragment() {
                 }
                 R.id.mis_ordenes_c->{
                     replaceFragment(FragmentOrdenesc())
+                }
+                R.id.op_carrito_c->{
+                    replaceFragment(FragmentCarrito())
                 }
             }
             true
